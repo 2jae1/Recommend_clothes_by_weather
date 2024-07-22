@@ -1,11 +1,11 @@
-function weather_info = detect_information_photo(photo_dir,dataset_dir)
+function weather_info = detect_information_photo(photo_dir,dataset)
     % Input directory of clothes
     dir_path = fullfile(photo_dir);
     clothes_list = dir(dir_path);
     clothes_list = clothes_list(~ismember({clothes_list.name}, {'.', '..'}));
     
     % Input directory of weather database
-    weather_path = fullfile(dataset_dir);
+    weather_path = fullfile(dataset);
     database = readtable(weather_path, 'VariableNamingRule', 'preserve');
     
     % Preprocessing datetime data
