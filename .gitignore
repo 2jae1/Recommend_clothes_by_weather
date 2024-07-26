@@ -1,5 +1,5 @@
 # Ignore the specific folder
-data/
+data/clothes_data/
 
 # Ignore .mat files inside the specific folder
-data/*.mat
+data/clothes_data/*.mat
