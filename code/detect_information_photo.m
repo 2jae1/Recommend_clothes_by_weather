@@ -25,7 +25,7 @@ function weather_info = detect_information_photo(photo_dir,dataset)
     end
     
     % Enter only the need data 
-    cols_to_remove = {'지점','지점명','일시','일 최심신적설(cm)','일 최심적설(cm)','안개 계속시간(hr)'};
+    cols_to_remove = {'지점','지점명','일시'};
     weather_info = removevars(weather_info, cols_to_remove);
     
     % Preprocessing NaN data
