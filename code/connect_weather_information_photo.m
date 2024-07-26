@@ -1,4 +1,4 @@
-function weather_info = detect_information_photo(photo_dir,dataset)
+function weather_info = connect_weather_information_photo(photo_dir,dataset)
     % Input directory of clothes
     dir_path = fullfile(photo_dir);
     clothes_list = dir(dir_path);
