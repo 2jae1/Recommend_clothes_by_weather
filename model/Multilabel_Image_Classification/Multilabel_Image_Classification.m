@@ -9,16 +9,16 @@ categoriesTrain = ["short_sleeved_shirt" "long_sleeved_shirt" ...
     "long_sleeved_dress" "vest_dress" "sling_dress"];
 numClasses = length(categoriesTrain);
 
-labelLocationTrain = load('../../data/fashion_dataset/train_all.mat');
+labelLocationTrain = load('../../data/clothes_data/train_all.mat');
 labelLocationTrain = labelLocationTrain.train;
-imageLocationTrain = '../../data/fashion_dataset/train_image'; 
+imageLocationTrain = '../../data/clothes_data/train_image'; 
 
 [dataTrain,encodedLabelTrain] = prepareData_deepfashion(labelLocationTrain,imageLocationTrain,categoriesTrain,inputSize,true);
 numObservations = dataTrain.NumObservations;
 
-labelLocationVal = load('../../data/fashion_dataset/validation_all.mat');  
+labelLocationVal = load('../../data/clothes_data/validation_all.mat');  
 labelLocationVal = labelLocationVal.validation;
-imageLocationVal = '../../data/fashion_dataset/validation_image';
+imageLocationVal = '../../data/clothes_data/validation_image';
 
 [dataVal,encodedLabelVal] = prepareData_deepfashion(labelLocationVal,imageLocationVal,categoriesTrain,inputSize,false);
 
@@ -123,8 +123,8 @@ exportONNXNetwork(trainedNet,'trainedNet.onnx')
 % end
 
 %% Predict Using New Data
-% imageNames = ["../../data/personal_clothes_data/test1.jpg" ...
-%     "../../data/personal_clothes_data/test2.jpg"];
+% imageNames = ["../../data/personal_clothes_data/2023-08-20-여수.jpg" ...
+%     "../../data/personal_clothes_data/2023-12-16-청주.jpg"];
 % 
 % figure
 % tiledlayout(1,2)
