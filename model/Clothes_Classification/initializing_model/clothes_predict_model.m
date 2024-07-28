@@ -1,4 +1,4 @@
-weather_dataset_dir = '../../data/weather_dataset/weather_database_20140723_20240723.csv';
+weather_dataset_dir = '../../../data/weather_dataset/weather_database_20140723_20240723.csv';
 dataset = make_dataset(weather_dataset_dir);
 dataset = string(table2cell(dataset));
 
