@@ -6,8 +6,8 @@ function model = make_customized_model(dataset, model,kind)
     new_data = cell2mat(dataset(:, 1:end-1)')';
     for col = 1:size(new_data, 2)
         new_data_min = min(new_data(:, col));
-        new_data_max = max(new_data(:, col));
-        new_data(:, col) = (new_data(:, col) - new_data_min) / (new_data_max - new_data_min);
+        data_max = max(data(:, col));
+        data(:, col) = (data(:, col) - data_min) / (data_max - data_min);
     end
 
     new_label = dataset(:, end);
