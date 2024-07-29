@@ -10,8 +10,9 @@ function net = make_ANN(dataset)
     num_classes = numel(unique_labels); % 클래스 수
     label_one_hot = full(ind2vec(label_numeric', num_classes)); % one-hot 인코딩
     
-    net = patternnet(10);
-    
+    net = patternnet([10, 10, 10],'trainrp');
+    net.trainParam.epochs = 1000;
+    net.trainParam.lr = 0.1;
     % 신경망 훈련
     net = train(net, data', label_one_hot);
 end

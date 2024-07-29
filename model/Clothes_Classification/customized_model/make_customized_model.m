@@ -37,7 +37,8 @@ function model = make_customized_model(dataset, model,kind)
     label_one_hot = full(ind2vec(new_label_numeric', num_classes));
     
     % model customize by personal data
-    model.trainParam.epochs = 50; % 추가 학습을 위한 epoch 설정 (필요에 따라 조정)
+    model.trainParam.epochs = 10000; % 추가 학습을 위한 epoch 설정 (필요에 따라 조정)
+    net.trainParam.lr = 0.1;
     model = train(model, new_data', label_one_hot);
 
 end

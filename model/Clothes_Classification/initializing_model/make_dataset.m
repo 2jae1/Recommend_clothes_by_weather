@@ -17,7 +17,7 @@ function dataset = make_dataset(weather_dataset_dir)
     dress = ["short_sleeved_dress" "long_sleeved_dress" "vest_dress" "sling_dress"];
     
     
-    Num_category = 20;
+    Num_category = 100;
     
     labels = repmat(label, 1, Num_category);
     labels = labels(:);
@@ -41,7 +41,7 @@ function dataset = make_dataset(weather_dataset_dir)
         end
     
         % Third column
-        random_year = randi([2014, 2023]);
+        random_year = randi([2015, 2023]);
         switch label_str
             case {'sling', 'vest', 'sling_dress', 'vest_dress'}
                 month_range = [7, 8];
