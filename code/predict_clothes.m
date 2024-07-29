@@ -23,11 +23,11 @@ function predict = predict_clothes()
     
     select = input('Please select a clothing type: \n 1 - tops and bottoms \n 2 - dress \n Select: ', 's');
     fprintf('\n');
-    val1 = input("Enter the average temperature : ");
-    val2 = input("Enter the daily rainfall amount : ");
-    val3 = input("Enter average wind speed : ");
-    val4 = input("Enter the average relative humidity : ");
-    val5 = input("Enter the average total cloud amount : ");
+    val1 = input("Enter the average temperature(°C) : ");
+    val2 = input("Enter the daily rainfall amount(mm) : ");
+    val3 = input("Enter average wind speed(m/s) : ");
+    val4 = input("Enter the average relative humidity(%) : ");
+    val5 = input("Enter the average total cloud amount(1/10) : ");
     
     data = {val1, val2, val3, val4, val5};
     data_matrix = cell2mat(data)';
