@@ -46,6 +46,7 @@ function output = predict_clothes()
         bottom_predict = bottom_classes(bottom_predict_num);
     
         fprintf("Recommended tops and bottoms: %s, %s\n", top_predict{1}, bottom_predict{1});
+        fprintf("Recommended tops and bottoms: %d, %d\n", top_predict_idx, bottom_predict_idx);
     
     elseif select == '2'
         dress_predict_idx = predict(dress_model,data_matrix);
@@ -54,5 +55,6 @@ function output = predict_clothes()
         dress_predict = dress_classes(dress_predict_num);
     
         fprintf("Recommended dress: %s\n", dress_predict{1});
+        fprintf("Recommended dress: %d\n", dress_predict_idx);
     end
 end
