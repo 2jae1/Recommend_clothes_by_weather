@@ -36,25 +36,23 @@ function output = predict_clothes()
     
     if select == '1'
         top_predict_idx = predict(top_model,data_matrix);
-        top_predict_idx = double(categorical(top_predict_idx));
+        top_predict_idx = str2double(top_predict_idx);
         top_predict_num = find(top_classes_idx == top_predict_idx);
         top_predict = top_classes(top_predict_num);
     
         bottom_predict_idx = predict(bottom_model,data_matrix);
-        bottom_predict_idx = double(categorical(bottom_predict_idx));
+        bottom_predict_idx = str2double(bottom_predict_idx);
         bottom_predict_num = find(bottom_classes_idx == bottom_predict_idx);
         bottom_predict = bottom_classes(bottom_predict_num);
     
         fprintf("Recommended tops and bottoms: %s, %s\n", top_predict{1}, bottom_predict{1});
-        fprintf("Recommended tops and bottoms: %d, %d\n", top_predict_idx, bottom_predict_idx);
     
     elseif select == '2'
         dress_predict_idx = predict(dress_model,data_matrix);
-        dress_predict_idx = double(categorical(dress_predict_idx));
+        dress_predict_idx = str2double(dress_predict_idx);
         dress_predict_num = find(dress_classes_idx == dress_predict_idx);
         dress_predict = dress_classes(dress_predict_num);
     
         fprintf("Recommended dress: %s\n", dress_predict{1});
-        fprintf("Recommended dress: %d\n", dress_predict_idx);
     end
 end

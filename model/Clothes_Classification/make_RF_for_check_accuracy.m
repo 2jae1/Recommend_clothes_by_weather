@@ -1,4 +1,4 @@
-function model = make_RF(dataset)
+function model = make_RF_for_check_accuracy(dataset)
     data = cell2table(dataset);
     
     % 레이블 열 지정

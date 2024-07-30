@@ -30,8 +30,8 @@ my_dataset = connect_weather_information_my_photo(clothes_info,weather_dataset_d
 [my_top_dataset, my_bottom_dataset, my_dress_dataset] = devide_clothes_dataset(my_dataset);
 
 top_dataset = [top; my_top_dataset];
-bottom_dataset = [top; my_bottom_dataset];
-dress_dataset = [top; my_dress_dataset];
+bottom_dataset = [bottom; my_bottom_dataset];
+dress_dataset = [dress; my_dress_dataset];
 
 top_model = make_RF(top_dataset);
 bottom_model = make_RF(bottom_dataset);
@@ -40,13 +40,3 @@ dress_model = make_RF(dress_dataset);
 save('top_model.mat','top_model');
 save('bottom_model.mat','bottom_model');
 save('dress_model.mat','dress_model');
-
-% data = cell2mat({1,2,3,4,5; ...
-%     2,3,4,5,6; ...
-%     -2,3,4,5,6; ...
-%     -4, 0, 42, 50, 1; ...
-%     20, 0, 0, 0, 20; ...
-%     10, 0, 0, 0, 10});
-% predict(top_model,data)
-% predict(bottom_model,data)
-% predict(dress_model,data)
