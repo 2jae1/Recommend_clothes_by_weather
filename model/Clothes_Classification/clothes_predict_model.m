@@ -39,19 +39,4 @@ dress_model = make_RF(dress_dataset);
 
 save('top_model.mat','top_model');
 save('bottom_model.mat','bottom_model');
-<<<<<<< HEAD
 save('dress_model.mat','dress_model');
-=======
-save('dress_model.mat','dress_model');
-
-data = cell2mat({27.8, 0.1, 2, 68.9, 8.8; ...
-    27,0.1,1.5,62.3,8; ...
-    22,45.5,1.3,96.1,10; ...
-    5.1, 0, 2.4, 49.6, 2.8; ...
-    3.1, 0, 2.8, 35.1, 2.3; ...
-    2.2, 0, 4.9, 31, 1.8; ...
-    19.2, 1.6,3.9,80.5,0});
-predict(top_model,data)
-predict(bottom_model,data)
-predict(dress_model,data)
->>>>>>> 18956a7a2fd55ae9a6360fd034e4a3311d12136e

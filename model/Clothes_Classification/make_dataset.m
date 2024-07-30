@@ -17,11 +17,7 @@ function dataset = make_dataset(weather_dataset_dir)
     dress = ["short_sleeved_dress" "long_sleeved_dress" "vest_dress" "sling_dress"];
     
     
-<<<<<<< HEAD
-    Num_category = 20;
-=======
-    Num_category = 100;
->>>>>>> 18956a7a2fd55ae9a6360fd034e4a3311d12136e
+    Num_category = 30;
     
     labels = repmat(label, 1, Num_category);
     labels = labels(:);
