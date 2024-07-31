@@ -122,9 +122,9 @@ exportONNXNetwork(trainedNet,'trainedNet.onnx')
 % ylabel("Score")
 % end
 
-%% Predict Using New Data
-% imageNames = ["../../data/personal_clothes_data/2023-08-20-여수.jpg" ...
-%     "../../data/personal_clothes_data/2023-12-16-청주.jpg"];
+%% Predict Using New Data (Add test01.jpg, test02.jpg to the path and execute code)
+% imageNames = ["../../data/personal_clothes_data/test01.jpg" ...
+%     "../../data/personal_clothes_data/test02.jpg"];
 % 
 % figure
 % tiledlayout(1,2)
