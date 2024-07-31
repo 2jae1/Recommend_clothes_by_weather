@@ -18,7 +18,7 @@
 * 날씨 데이터와 옷 label를 연결하여 dataset을 반환하는 함수 
 * * *
 ### devide_clothes_dataset.m
-* dataset을 상의, 하의, 드레스 dataset로 분할하는 함수
+* dataset을 상의, 하의, 드레스 각각의 dataset으로 분할하는 함수
 * * *
 ### make_dataset.m
 * 옷 label에 따른 날씨 데이터를 연결하여 새로운 dataset으로 저장하는 함수
