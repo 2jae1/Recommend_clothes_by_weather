@@ -1,4 +1,5 @@
 function output = predict_clothes()
+    % Import tranined Random Forest models
     model_files = {'top_model.mat', 'bottom_model.mat', 'dress_model.mat'};
     model_names = {'top_model', 'bottom_model', 'dress_model'};
     
@@ -22,7 +23,8 @@ function output = predict_clothes()
             dress_model = loadData.(model_names{i});
         end
     end
-        
+    
+    % Enter the clothes option & weather data
     select = input('Please select a clothing type: \n 1 - tops and bottoms \n 2 - dress \n Select: ', 's');
     fprintf('\n');
     val1 = input("Enter the average temperature(°C) : ");
@@ -34,6 +36,7 @@ function output = predict_clothes()
     data = {val1, val2, val3, val4, val5};
     data_matrix = cell2mat(data);
     
+    % Predict with each option
     if select == '1'
         top_predict_idx = predict(top_model,data_matrix);
         top_predict_idx = str2double(top_predict_idx);

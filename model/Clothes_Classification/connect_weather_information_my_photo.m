@@ -11,7 +11,7 @@ function dataset = connect_weather_information_my_photo(photo_dataset,weather_da
     % Preprocessing datetime data
     database{:,'일시'} = datetime(database{:,'일시'}, 'InputFormat', 'yyyy-MM-dd');
     
-    % dataset to insert weather information
+    % Dataset to insert weather information
     dataset = [];
     numRows = size(photo_dataset, 1);
     
@@ -29,7 +29,7 @@ function dataset = connect_weather_information_my_photo(photo_dataset,weather_da
         dataset = [dataset; data];
     end
     
-    % % Enter only the need data 
+    % Enter only the need data 
     cols_to_remove = {'지점','지점명','일시'};
     dataset = removevars(dataset, cols_to_remove);
     

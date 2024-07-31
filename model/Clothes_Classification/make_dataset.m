@@ -28,6 +28,7 @@ function dataset = make_dataset(weather_dataset_dir)
     dataset.kind = new_column_data;
     dataset.date = new_column_data;
     
+    % Match each clothes to proper date
     for i = 1:numRows
         label_str = string(dataset{i, 'label'});
     
@@ -71,7 +72,7 @@ function dataset = make_dataset(weather_dataset_dir)
         random_index = randi(region_size);
         region = region_data{random_index};
     
-        random_month_idx = randi(length(month_range)); % 월 범위의 인덱스
+        random_month_idx = randi(length(month_range));
         random_month = month_range(random_month_idx);
         max_days = days_in_month(random_month_idx);
         random_day = randi(max_days);

@@ -4,7 +4,7 @@ function clothes_info = clothes_classification(photo_dir)
     clothes_list = dir(dir_path);
     clothes_list = clothes_list(~ismember({clothes_list.name}, {'.', '..'}));
     
-    % load network, save infomation
+    % Load network, save infomation
     trainedNet = importONNXNetwork('../Multilabel_Image_Classification/trainedNet.onnx');
     inputSize = trainedNet.Layers(1).InputSize; thresholdValue = 0.5;
     clothes = ["short_sleeved_shirt" "long_sleeved_shirt" ...
