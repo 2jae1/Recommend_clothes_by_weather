@@ -1,4 +1,4 @@
-# Multi-lable classification 모델에 사용되는 코드
+# Multi-label classification 모델에 사용되는 코드
 아래의 코드는 Multilabel_Image_Classification.m 코드 구현을 위해 정의한 함수 파일입니다.
 * * *
 ### Multilabel_Image_Classification.m
@@ -15,13 +15,13 @@
 * multi-label image classification 문제에 사용
 * * *
 ### F1Score.m
-* F1Score 계산하는 함수
+* F1 Score를 계산하는 함수
 * * *
 ### jaccardIndex.m
-* jaccard index 계산하는 함수
+* jaccard index를 계산하는 함수
 * * *
 ### performanceMetrics.m
-* precision, recall 계산하는 함수 
+* precision, recall를 계산하는 함수 
 * * *
 ### prepareData_deepfashion.m
-* prepare data 함수 
+* 데이터셋을 전처리하는 함수 

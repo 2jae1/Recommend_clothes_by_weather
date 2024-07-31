@@ -18,13 +18,13 @@
 * 날씨 데이터와 옷 종류를 연결하여 dataset을 반환하는 함수 
 * * *
 ### devide_clothes_dataset.m
-* dataset을 상의, 하의, 드레스 dataset로 분할하는 함수
+* dataset을 상의, 하의, 드레스 각각의 dataset으로 분할하는 함수
 * * *
 ### make_dataset.m
-* 옷 종류에 따른 날씨 데이터를 연결하여 dataset을 저장하는 함수
+* 옷 종류에 따른 날씨 데이터를 연결하여 새로운 dataset으로 저장하는 함수
 * * *
 ### make_RF.m
-* Random Forest 구현, 학습하는 함수
+* Random Forest model을 구현, 학습하는 함수
 * * *
 ### make_RF_for_check_accuracy.m
-* Random Forest 구현, 학습하여 모델의 성능을 평가할 수 있는 함수
+* Random Forest model을 구현, 학습하여 모델의 성능을 평가할 수 있는 함수
