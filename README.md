@@ -76,6 +76,14 @@ DeepFashion2 dataset을 활용하였습니다.
 * code/predict_clothes.m 함수를 이용하여 실행합니다.
 * code 폴더로 Path 설정 후 command window에 predict_clothes() 입력 뒤, 원하는 옵션(상의,하의 / 드레스)과 날씨 데이터 정보를 입력합니다.
 
+### MATLAB AI challenge 2023 : Team CS
+[![Static Badge](https://img.shields.io/badge/Jeong--Soooo-yellow?style=flat-square&logo=Github)
+](https://github.com/Jeong-Soooo)
+[![Static Badge](https://img.shields.io/badge/2jae1-blue?style=flat-square&logo=Github)
+](https://github.com/2jae1)
+[![Static Badge](https://img.shields.io/badge/fluideun-green?style=flat-square&logo=Github)](https://github.com/fluideun)
+
+
 # 참조
 
 ##### [`[1]`]() : [Github : A-Z-Deepfashion2-Impleamentation](https://github.com/Manishsinghrajput98/A-Z-Deepfashion2-Impleamentation/blob/master/deepfashion2coco.py)
