@@ -1,3 +1,6 @@
+[![한국어](https://img.shields.io/badge/lang-%ED%95%9C%EA%B5%AD%EC%96%B4-blue.svg)](README_ko.md)
+[![English](https://img.shields.io/badge/lang-English-red.svg)](README_en.md)
+
 # 날씨 데이터를 반영한 맞춤 옷차림 추천 모델
 
 ![Alt text](/images/model_result.png)
@@ -76,13 +79,17 @@ DeepFashion2 dataset을 활용하였습니다.
 * code/predict_clothes.m 함수를 이용하여 실행합니다.
 * code 폴더로 Path 설정 후 command window에 predict_clothes() 입력 뒤, 원하는 옵션(상의, 하의 / 드레스)과 날씨 데이터 정보를 입력합니다.
 
-### MATLAB AI challenge 2024 : Team TPO
+# MATLAB AI challenge 2024 : Team TPO
 [![Static Badge](https://img.shields.io/badge/Jeong--Soooo-yellow?style=flat-square&logo=Github)
 ](https://github.com/Jeong-Soooo)
 [![Static Badge](https://img.shields.io/badge/2jae1-blue?style=flat-square&logo=Github)
 ](https://github.com/2jae1)
 [![Static Badge](https://img.shields.io/badge/fluideun-green?style=flat-square&logo=Github)](https://github.com/fluideun)
 
+# 관련링크
+[![Static Badge](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=tHFKcDdlyKk)
+
+[![Static Badge](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://kr.mathworks.com/matlabcentral/fileexchange/170611-recommend-clothes-by-weather)
 
 # 참조
 
