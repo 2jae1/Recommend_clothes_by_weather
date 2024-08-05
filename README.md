@@ -1,4 +1,4 @@
-[![한국어](https://img.shields.io/badge/lang-%ED%95%9C%EA%B5%AD%EC%96%B4-blue.svg)](README_ko.md)
+[![한국어](https://img.shields.io/badge/lang-%ED%95%9C%EA%B5%AD%EC%96%B4-blue.svg)](README.md)
 [![English](https://img.shields.io/badge/lang-English-red.svg)](README_en.md)
 
 # 날씨 데이터를 반영한 맞춤 옷차림 추천 모델
