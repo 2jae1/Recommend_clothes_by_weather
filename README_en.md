@@ -39,17 +39,17 @@ When the user enters weather data and selects the 'top, bottom' and 'dress' opti
 # Main code description
 
 ### **code/predict_clothes.m**
-*  A function that recommends clothes when you enter the weather (final executable code)  
+*  A function that recommends clothes when you enter the weather. (final executable code)  
 
 ### **model/Clothes_Classificatoin/clothes_predict_model.m** 
-* Random Forest model training code
+* Random Forest model training code.
 
 * The path to the directory containing the user's clothing photo data must be entered in the 'photo_dir' variable in line 2.
 
 * The path to the directory containing the weather dataset must be entered in the 'weather_dataset_dir' variable in line 3.  
 
 ### **model/Multilabel_Image_Classification/Multilabel_Image_Classification.m**
-* Multilabel Classification model training code  
+* Multilabel Classification model training code.  
 
 * In 'labelLocationTrain' in line 12, the path to the mat file that saved only the necessary data after converting the json file of the DeepFashion2 train dataset to COCO dataset format was entered.  
 

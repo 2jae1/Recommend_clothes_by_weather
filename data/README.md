@@ -1,3 +1,6 @@
+[![한국어](https://img.shields.io/badge/lang-%ED%95%9C%EA%B5%AD%EC%96%B4-blue.svg)](README.md)
+[![English](https://img.shields.io/badge/lang-English-red.svg)](README_en.md)
+
 ## Dataset 구성 방법
 data 폴더 안에는 총 3개의 폴더가 필요합니다.
 

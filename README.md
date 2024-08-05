@@ -42,17 +42,17 @@ DeepFashion2 dataset을 활용하였습니다.
 # 주요 코드 설명
 
 ### **code/predict_clothes.m**
-*  날씨를 입력하면 옷을 추천하는 함수 (최종 실행 코드)
+*  날씨를 입력하면 옷을 추천하는 함수. (최종 실행 코드)
 
 ### **model/Clothes_Classificatoin/clothes_predict_model.m** 
-* Random Forest model 학습 코드
+* Random Forest model 학습 코드.
 
 * line 2의 'photo_dir' 변수에는 사용자의 옷 사진 데이터가 들어있는 directory의 경로가 입력되어야 합니다.
 
 * line 3의 'weather_dataset_dir' 변수에는 날씨 데이터셋이 들어있는 directory의 경로가 입력되어야 합니다.
 
 ### **model/Multilabel_Image_Classification/Multilabel_Image_Classification.m**
-* Multilabel Classification model 학습 코드 
+* Multilabel Classification model 학습 코드. 
 
 * line 12의 'labelLocationTrain'에는 DeepFashion2 train dataset의 json 파일을 COCO dataset format으로 변환 후 필요한 데이터만 저장한 mat 파일의 경로가 입력되었습니다.
 
@@ -73,7 +73,7 @@ DeepFashion2 dataset을 활용하였습니다.
  * model/Multilabel_Image_Classification/Multilabel_Image_Classification.m 파일을 실행합니다.
 
  ## Random-Forest 모델 구현
- * model/Clothes_Classificatoin/clothes_predict_model.m 파일을 실행합니다
+ * model/Clothes_Classificatoin/clothes_predict_model.m 파일을 실행합니다.
 
 ## 학습된 모델의 결과 확인
 * code/predict_clothes.m 함수를 이용하여 실행합니다.
